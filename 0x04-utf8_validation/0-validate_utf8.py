@@ -26,7 +26,7 @@ def validUTF8(data):
                 return False
         else:
             '''checks if current byte has format 10xxxxx'''
-            if not (data[i] & (i << 7) and not (data[i] & (1 << 6))):
+            if not (data[i] & (1 << 7) and not (data[i] & (1 << 6))):
                 return False
         bits_count -= 1
     return bits_count == 0
