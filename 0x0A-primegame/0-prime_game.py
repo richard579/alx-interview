@@ -9,7 +9,7 @@ def isWinner(x, nums):
 
     for num in nums:
         roundsSet = list(range(1, num + 1))
-        primesSet = primes_in_range(1, num))
+        primesSet = primes_in_range(1, num)
 
         if not primesSet:
             benWinsCount += 1
@@ -30,7 +30,7 @@ def isWinner(x, nums):
 
             roundsSet = [x for x in roundsSet if x % smallestPrime != 0]
 
-            is isMariaTurns = not isMariaTurns
+            isMariaTurns = not isMariaTurns
 
     if mariaWinsCount > benWinsCount:
         return "Winner: Maria"
@@ -45,8 +45,8 @@ def is_prime(n):
     """Returns True if n is prime , else False"""
     if n < 2:
         return False
-    for i in range(2, int(n ** 0.5) + 1:
-        if n % 1 == 0:
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
             return False
     return True
 
